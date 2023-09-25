@@ -48,13 +48,13 @@ const Nombre = ({ onComplete, nombre, setNombre }) => {
           placeholder="Apellido Paterno"
           value={nombre.apellidoPaterno}
           onChange={handleInputChange}
+          onBlur={handleComplete}
           name="apellidoPaterno"
         />
         <TextInput
           placeholder="Apellido Materno"
           value={nombre.apellidoMaterno}
           onChange={handleInputChange}
-          onBlur={handleComplete}
           name="apellidoMaterno"
         />
       </Contenedor>

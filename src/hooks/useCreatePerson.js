@@ -6,6 +6,7 @@ const useCreatePerson = () => {
   const [createPerson] = useMutation(CREATE_PERSON);
 
   const createPersonHandler = async (nombre, contacto, fechaNacimiento) => {
+    console.log(nombre);
     createPerson({
       variables: {
         personInput: {
